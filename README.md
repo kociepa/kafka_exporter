@@ -1,7 +1,7 @@
 kafka_exporter
 ==============
 
-[![Build Status](https://travis-ci.org/danielqsj/kafka_exporter.svg?branch=master)](https://travis-ci.org/danielqsj/kafka_exporter)[![Docker Pulls](https://img.shields.io/docker/pulls/danielqsj/kafka-exporter.svg)](https://hub.docker.com/r/danielqsj/kafka-exporter)[![Go Report Card](https://goreportcard.com/badge/github.com/danielqsj/kafka_exporter)](https://goreportcard.com/report/github.com/danielqsj/kafka_exporter)[![Language](https://img.shields.io/badge/language-Go-red.svg)](https://github.com/danielqsj/kafka-exporter)[![GitHub release](https://img.shields.io/badge/release-1.1.0-green.svg)](https://github.com/alibaba/derrick/releases)[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 Kafka exporter for Prometheus. For other metrics from Kafka, have a look at the [JMX exporter](https://github.com/prometheus/jmx_exporter).
 
@@ -23,6 +23,7 @@ Table of Contents
 	-	[Brokers](#brokers)
 	-	[Topics](#topics)
 	-	[Consumer Groups](#consumer-groups)
+-   [Grafana](#grafana)
 -   [Contribute](#contribute)
 -   [Donation](#donation)
 -   [License](#license)
@@ -211,6 +212,11 @@ kafka_consumergroup_current_offset{consumergroup="KMOffsetCache-kafka-manager-38
 # TYPE kafka_consumergroup_lag gauge
 kafka_consumergroup_lag{consumergroup="KMOffsetCache-kafka-manager-3806276532-ml44w",partition="0",topic="__consumer_offsets"} 1
 ```
+
+Grafana
+-------
+
+You can use [this dashboard](https://grafana.com/dashboards/5484) in Grafana.
 
 Contribute
 ----------
